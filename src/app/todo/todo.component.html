@@ -1,0 +1,15 @@
+
+<div>
+    <br>
+    <app-add-todo (insertNewThing)="insertThing($event)">
+    </app-add-todo>
+    <br>
+    <app-todo-list [things]="todoList" (deletedThing)="deleteThing($event)">
+    </app-todo-list>
+</div>
+
+<!--<div *ngIf="!status">
+    <app-todo-form>
+
+    </app-todo-form>
+</div>-->

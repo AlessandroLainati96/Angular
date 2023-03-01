@@ -1,0 +1,6 @@
+<input id="textarea" #textarea (change)="updateOnChange(textarea.value)" onfocus="this.value=''"
+       style="width: 85%; height: 25px ;margin-left: 2%; border-radius: 5px; border-color: rgb(191, 191, 181);">
+<button (click)="addThing(this.newthing)"
+        style="width: 9%; height: 30px; margin-left: 1%; border-radius: 5px; background-color: transparent;
+               border-color: rgb(0, 123, 255); color: rgb(0, 123, 255);">
+    Add</button>

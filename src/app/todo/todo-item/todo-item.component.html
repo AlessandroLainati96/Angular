@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a [routerLink]="['/todo', this.thing.id]">
+    ─ &nbsp; {{ this.thing.id }} &nbsp;&nbsp; {{ this.thing.label }}
+</a>
+<button style="width: 30px; height: 20px; margin-right: 1.5%; float: right; 
+               background-color: #e06d6d; color: red; border-radius: 4px;"
+        (click)="deleteThing(thing)">
+    <i class="fa fa-close"></i>
+</button>

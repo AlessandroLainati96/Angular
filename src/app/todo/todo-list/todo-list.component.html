@@ -1,0 +1,14 @@
+<ng-container *ngIf="!this.status">
+    <table class="table">
+        <hr>
+        <tr *ngFor="let element of things">
+                <app-todo-item [thing]="element" (deletedThing)="deleteThing($event)">
+                </app-todo-item>
+                <hr style="width: 100%; border-width: 2px;">
+        </tr>
+    </table>
+</ng-container>
+
+<p *ngIf="this.status">
+    Id: {{ (this.todoElement | async)!.id }}, Label: {{ (this.todoElement | async)!.label }}
+</p>

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0%;
+}
+.header-area {
+    height: 15vh;
+    margin: 0px;
+    background-color:cornflowerblue;
+}
+.todo-area {
+    height: 85vh;
+    margin: 0px;
+}
